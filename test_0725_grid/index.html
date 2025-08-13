@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+#container{
+    /*1fr 은 전체 너비를 동일하게 나누는 단위입니다. */
+    display:grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 1fr;  /* 열의 갯수와 너비 지정 */
+    grid-template-rows :  1fr 1fr; /* 행의 갯수와 높이 지정 */
+    gap: 10px; 
+}
+#container .item{ border:1px solid red; background:#ccc; height:20px; }
+    </style>
+</head>
+<body>
+    <div id="container" id="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
